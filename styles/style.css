@@ -1,0 +1,91 @@
+:root{
+  --clr-Green: hsl(75, 94%, 57%);
+
+  --clr-White: hsl(0, 0%, 100%);
+  --clr-lightGrey: hsl(0, 0%, 70%);
+  --clr-Grey: hsl(0, 0%, 20%);
+  --clr-DarkGrey: hsl(0, 0%, 12%);
+  --clr-OffBlack: hsl(0, 0%, 8%);
+
+  --ff-regular: "Inter", sans-serif;
+
+  --fw-regular: 400;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+}
+
+
+body{
+  display: grid;
+  place-content: center;
+  font-family: var(--ff-regular);
+  font-weight: var(--fw-regular);
+  color: var(--clr-White);
+  background-color: var(--clr-OffBlack);
+  font-size: 0.875rem;    
+}
+
+.profile-card{
+  display: grid;
+  gap: 1rem;
+  background-color: var(--clr-DarkGrey);
+  padding: 2.5rem;
+  border-radius: 1rem;
+  width: 385px;
+  height: 612px;
+}
+
+.profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile__picture{
+  width: 90px;
+  border-radius: 50px;
+  margin-bottom: 1.5rem;
+}
+
+.profile__name{
+  font-size: 1.5rem;
+  font-weight: var(--fw-semibold);
+}
+.profile__address{
+  color: var(--clr-Green);
+  font-weight: var(--fw-bold);
+}
+
+.profile__info{
+  margin-top: 1.5rem;
+  color: var(--clr-lightGrey);
+}
+
+.buttons-flex{
+  display: grid;
+  width: 100%;
+  gap: 1rem;
+}
+
+.button{
+  border-radius: .5rem;
+  font-weight: var(--fw-semibold);
+  background-color: var(--clr-Grey);
+  color: var(--clr-White); 
+  padding: 0.7rem;
+  border: none;
+  font-size: 0.75;
+}
+
+.button:hover{
+  background-color: var(--clr-Green);
+  color: var(--clr-OffBlack);
+}
+
+
+@media (max-width: 375px) {
+  .profile-card{
+    width: 343px;
+  }
+}
+
