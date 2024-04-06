@@ -80,6 +80,7 @@ body{
 .button:hover{
   background-color: var(--clr-Green);
   color: var(--clr-OffBlack);
+  cursor: pointer;
 }
 
 
